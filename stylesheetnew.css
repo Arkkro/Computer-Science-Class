@@ -1,3 +1,4 @@
+/* Main */
 body{
   background-color:#282828;
 }
@@ -30,10 +31,15 @@ body{
   position: fixed;
   margin-top:200px;
 }
-#mascotimg{
-  width:400px;
-  margin-left:-98px;
-  margin-top: -85px;
+#mascotimgrem{
+  width:430px;
+  margin-left:-116px;
+  margin-top: -92px;
+}
+#mascotimgram{
+  width:330px;
+  margin-left:-60px;
+  margin-top: -64px;
 }
 /* Mascot End */
 /* Clock Start */
@@ -75,12 +81,139 @@ body{
   padding-left: 15px;
   padding-right: 5px;
 }
-
-
+#header {
+  font-size: 24px;
+  font-weight: bold;
+  color:#d4f4fa;
+  font-family: monospace;
+}
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left:18px;
+}
+table {
+  color:#d4f4fa;
+  font-family: monospace;
+}
 a{
   text-decoration: none;
+  color:#d4f4fa;
 }
 
 li{
   list-style: none;
+}
+/* Main End*/
+/* Hardware page CSS */
+#hardwarebox {
+  width: 630px;
+  height: 535px;
+  margin-left: 260px;
+  margin-top: 40px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  display:inline-block;
+  padding-top: 20px;
+  padding-bottom: -20;
+}
+#imageviewercomp{
+  width: 405px;
+  height: 560px;
+  margin-left: 920px;
+  margin-top: -552px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  position: absolute;
+}
+#imageviewermobo{
+  width: 405px;
+  height: 550px;
+  margin-left: 920px;
+  margin-top: -552px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  position: absolute;
+}
+#imageviewerram{
+  width: 495px;
+  height: 350px;
+  margin-left: 920px;
+  margin-top: -552px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  position: absolute;
+}
+#imageviewergpu{
+  width: 495px;
+  height: 315px;
+  margin-left: 920px;
+  margin-top: -552px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  position: absolute;
+}
+#imageviewerper{
+  width: 570px;
+  height: 315px;
+  margin-left: 920px;
+  margin-top: -552px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  position: absolute;
+}
+#imageviewercpu{
+  width: 405px;
+  height: 470px;
+  margin-left: 920px;
+  margin-top: -552px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  position: absolute;
+}
+#imageviewerhdd{
+  width: 305px;
+  height: 470px;
+  margin-left: 920px;
+  margin-top: -552px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  position: absolute;
+}
+#divider {
+  padding-right:25px;
+}
+#imageformatcomp {
+    padding-top: 80px;
+    width:490px;
+    transform: rotate(90deg);
+}
+#imageformatmotherboard {
+    width:440px;
+    margin-left:-30px;
+}
+#imageformatcpu {
+    width:740px;
+    margin-left:-163px;
+}
+#imageformathdd {
+    width:430px;
+    margin-left:-163px;
+    padding-left: 100px;
+    margin-top: -50px;
+}
+#imageformatram {
+    padding-top: 0px;
+    width:470px;
+}
+#imageformatgpu {
+    padding-top: 0px;
+    width:470px;
+}
+#imageformatper {
+    margin-top: -60px;
+    width:570px;
+}
+#smalltitle {
+  padding-left:48px;
 }
