@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheetnew.css" type="text/css"/>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div id="navbar">
+      <div>
+        <a href="homepagenew.html" class="font">Home</a>
+      </div>
+      <div>
+        <a href="aboutme.html" class="font">About Me</a>
+      </div>
+      <div>
+        <a href="hardware.html" class="font">Hardware</a>
+      </div>
+      <div>
+        <a href="blog.html" class="font"><strong>HTML Blog</strong></a>
+      </div>
+      <div>
+        <a href="#" class="font">link</a>
+      </div>
+    </div>
+    <!-- Nav Bar End -->
+    <!--Clock-->
+    <div id="clockbox">
+      <p class="font" id="clocktext">TODAY 00/00/2000 00:00:00</p>
+    </div>
+    <!--Clock End -->
+    <!--Site Mascot-->
+    <div id="mascot">
+    <img id="mascotimgrem" src="https://puu.sh/qVuZt/7d43db0a82.png"/>
+    </div>
+    <!--Site Mascot End-->
+    <br/>
+    <div id="contentboxblog">
+      <h2 id="blogh1">Html/CSS</h2>
+      <div id="divleft">
+        <h2 id="blogh1">HTML</h2>
+        <p class="font">HTML stands for HyperText Markup Language.</p>
+        <p class="font">Here is how this box looks in text form:</p>
+        <div id="htmlexplain">
+          <pre><code id="code">&lt;div id=&quot;divleft&quot;&gt;<br/>  &lt;h2 id=&quot;blogh1&quot;&gt;HTML&lt;/h2&gt;<br/>  &lt;p class=&quot;font&quot;&gt; HTML stands for HyperText Markup Language.&lt;/p&gt;<br/>  &lt;p class=&quot;font&quot;&gt; Here is how this box looks in text form:&lt;/p&gt;<br/>  &lt;div id=&quot;htmlexplain&quot;&gt;<br/>    &lt;p class=&quot;font&quot;&gt; [The Code] &lt;/p&gt;<br/>  &lt;/div&gt;<br/>&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      <div id="divright">
+        <h2 id="blogh1">CSS Selectors and Proportys</h2>
+        <p class="font">CSS stands for Cascading Style Sheet.</p>
+        <p class="font">It is what makes what you see on this page positioned. The code for these this blog box and the two top boxes looks like this:</p>
+        <div id="cssexplain">
+          <pre><code class="font"> /* Blog */
+          #contentboxblog {
+            width: 900px;
+            height:850px;
+            margin: auto;
+            margin-top: 40px;
+            margin-right: 190px;
+            background-color: #171717;
+            border: 1px solid #d4f4fa;
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+          #code {
+            color:#d4f4fa;
+            font-size: 12px;
+            font-family: monospace;
+          }
+          #blogh1{
+            color:#d4f4fa;
+            font-family: monospace;
+            text-align: center;
+          }
+          #htmlexplain{
+            width: 350px;
+            height:130px;
+            margin-left:5px;
+            margin-right:5px;
+            background-color:#282828;
+            margin-left: 13px;
+            overflow-y:scroll;
+          }
+          #cssexplain {
+              width: 350px;
+              height:130px;
+              margin-top: -14px;
+              margin-left:5px;
+              margin-right:5px;
+              background-color:#282828;
+              margin-left: 13px;
+              overflow-y:scroll;
+            }
+
+          #divleft{
+            width:375px;
+            height: 250px;
+            background-color: #171717;
+            border: 1px solid #d4f4fa;
+            margin-left: 15px;
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+          #divright{
+            width:375px;
+            height: 250px;
+            background-color: #171717;
+            border: 1px solid #d4f4fa;
+            margin-left: 499px;
+            margin-top: -252px;
+            padding-left: 5px;
+            padding-right: 5px;
+          } </code></pre>
+        </div>
+      </div>
+        <div id="divbottomright">
+          <h2 class="font" style="text-align:center">CSS</h2>
+          <p class="font">CSS is based off <strong>selectors and propertys</strong> to tell the computer where and how to dispay the html.</p>
+          <div id="htmlexplain">
+            <br/>
+            <br/>
+            <pre><code class="font"></code></pre>
+            <pre><code class="font">
+              #boldfont
+              /*^ this is a selector ^*/
+              /* They select what part of code you want to style */
+
+              {
+                /* property are below me */
+                /* propertys tell how the code is styled */
+
+                font-weight: bold;
+                color: #d4f4fa;
+                font-family: monospace;
+                font-size: 12px;
+              }
+              <code><pre>
+          </div>
+        </div>
+        <div id="divbottomleft">
+          <h2 class="font" style="text-align:center">aaaaa</h2>
+          <p class="font">HTML is based off <strong>tags</strong> to tell the computer what to display.</p>
+          <div id="htmlexplain">
+            <br/>
+            <br/>
+            <pre><code class="font"> &lt;p&gt; The tags are the less than greater than signs and everything in between .&lt;/p&gt;</code></pre>
+            <pre><code class="font"> &lt;p id="boldfont"&gt;<strong>Everything inside the tag tells what kind of tag it is and the opening tag also says what proportys it has.</strong>&lt;/p&gt;<code><pre>
+            <p class="font"> &lt;!--- notice how we set the id to boldfont above---&gt;
+          </div>
+        </div>
+      <!-- Test Subject -->
+      <div id="animation"><p class="font" id="div109text">Test Subject Div109</p><div>
+      <!-- Text Subject -->
+    </div>
+  </body>
+</html>

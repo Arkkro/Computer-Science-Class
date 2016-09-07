@@ -105,6 +105,121 @@ li{
   list-style: none;
 }
 /* Main End*/
+/* Animation Test And Blog */
+#contentboxblog {
+  width: 900px;
+  height:850px;
+  margin: auto;
+  margin-top: 40px;
+  margin-right: 190px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#code {
+  color:#d4f4fa;
+  font-size: 12px;
+  font-family: monospace;
+}
+#blogh1{
+  color:#d4f4fa;
+  font-family: monospace;
+  text-align: center;
+}
+#htmlexplain{
+  width: 380px;
+  height:180px;
+  margin-left:5px;
+  margin-right:5px;
+  background-color:#282828;
+  margin-left: 13px;
+  overflow-y:scroll;
+}
+#cssexplain {
+    width: 380px;
+    height:160px;
+    margin-top: -8px;
+    margin-left:5px;
+    margin-right:5px;
+    background-color:#282828;
+    margin-left: 13px;
+    overflow-y:scroll;
+  }
+  #divbottomright{
+    width:405px;
+    height: 300px;
+    background-color: #171717;
+    border: 1px solid #d4f4fa;
+    margin-left: 470px;
+    padding-left: 5px;
+    margin-top: 10px;
+    padding-right: 5px;
+  }
+  #divbottomleft{
+    width:405px;
+    height: 300px;
+    background-color: #171717;
+    border: 1px solid #d4f4fa;
+    margin-left: 15px;
+    margin-top: -302px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+#divleft{
+  width:405px;
+  height: 300px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  margin-left: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#divright{
+  width:405px;
+  height: 300px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  margin-left: 470px;
+  margin-top: -302px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#animation {
+width: 100px;
+height: 100px;
+background-color: inherit;
+border: 1px solid #d4f4fa;
+position: relative;
+margin-left: 940px;
+margin-top: -200px;
+animation: testmove 5s infinite;
+transition-duration: 2s;
+}
+@keyframes testmove {
+    0%   {top: 0px;}
+   25%  {top: 200px;}
+   50%  {top: 100px;}
+   75%  {top: 200px;}
+   100% {top: 0px;}
+}
+@-webkit-keyframes testmove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    50%  {top: 100px}
+    75% {top: 200px;}
+    100% {top:0px;}
+}
+#div109text {
+  text-align: center;
+  padding-top:24px;
+}
+#div109text:hover{
+  color:transparent;
+}
+
+/*Animation Test*/
 /* Hardware page CSS */
 #hardwarebox {
   width: 630px;
