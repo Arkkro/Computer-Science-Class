@@ -54,6 +54,17 @@ body{
   position: fixed;
   margin-top:170px
 }
+#searchbox {
+  height: 6px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #d4f4fa;
+  background-color:#171717;
+  display: inline-block;
+  text-align: center;
+  position:fixed;
+  margin-top:-380px
+}
 #clocktext {
   margin-top: -2.5px;
   font-size: 11px;
@@ -108,7 +119,7 @@ li{
 /* Animation Test And Blog */
 #contentboxblog {
   width: 900px;
-  height:850px;
+  height:1450px;
   margin: auto;
   margin-top: 40px;
   margin-right: 190px;
@@ -146,6 +157,36 @@ li{
     margin-left: 13px;
     overflow-y:scroll;
   }
+  #divmiddleright{
+    width:405px;
+    height: 300px;
+    background-color: #171717;
+    border: 1px solid #d4f4fa;
+    margin-left: 470px;
+    padding-left: 5px;
+    margin-top: 10px;
+    padding-right: 5px;
+  }
+  #divmiddleleft{
+    width:405px;
+    height: 300px;
+    background-color: #171717;
+    border: 1px solid #d4f4fa;
+    margin-left: 15px;
+    margin-top: -302px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #divbottomleft{
+    width:405px;
+    height: 300px;
+    background-color: #171717;
+    border: 1px solid #d4f4fa;
+    margin-left: 15px;
+    padding-left: 5px;
+    margin-top: -302px;
+    padding-right: 5px;
+  }
   #divbottomright{
     width:405px;
     height: 300px;
@@ -156,17 +197,6 @@ li{
     margin-top: 10px;
     padding-right: 5px;
   }
-  #divbottomleft{
-    width:405px;
-    height: 300px;
-    background-color: #171717;
-    border: 1px solid #d4f4fa;
-    margin-left: 15px;
-    margin-top: -302px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
 #divleft{
   width:405px;
   height: 300px;
@@ -189,7 +219,7 @@ li{
 #animation {
 width: 100px;
 height: 100px;
-background-color: inherit;
+background-color: #171717;
 border: 1px solid #d4f4fa;
 position: relative;
 margin-left: 940px;

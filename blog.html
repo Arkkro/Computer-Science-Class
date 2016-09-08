@@ -2,8 +2,9 @@
 <html>
   <head>
     <link rel="stylesheet" href="stylesheetnew.css" type="text/css"/>
+    <script type="text/javascript" src="jquery-1.8.3.js"></script>
   </head>
-  <body>
+  <body onload="startTime()">
     <!-- Nav Bar -->
     <div id="navbar">
       <div>
@@ -25,7 +26,7 @@
     <!-- Nav Bar End -->
     <!--Clock-->
     <div id="clockbox">
-      <p class="font" id="clocktext">TODAY 00/00/2000 00:00:00</p>
+      <p class="font" id="clocktext">clock</p>
     </div>
     <!--Clock End -->
     <!--Site Mascot-->
@@ -33,6 +34,13 @@
     <img id="mascotimgrem" src="https://puu.sh/qVuZt/7d43db0a82.png"/>
     </div>
     <!--Site Mascot End-->
+    <div id="searchbox">
+      <div class="searchbar">
+			   <form name="form1" action="http://google.com/search" target="_blank" method="get" >
+           <input type="text" autocomplete="off" placeholder="google search..." name="q" class="searchinput"></input>
+			   </form>
+      </div>
+    </div>
     <br/>
     <div id="contentboxblog">
       <h2 id="blogh1">Html/CSS</h2>
@@ -45,7 +53,7 @@
         </div>
       </div>
       <div id="divright">
-        <h2 id="blogh1">CSS Selectors and Proportys</h2>
+        <h2 id="blogh1">CSS</h2>
         <p class="font">CSS stands for Cascading Style Sheet.</p>
         <p class="font">It is what makes what you see on this page positioned. The code for these this blog box and the two top boxes looks like this:</p>
         <div id="cssexplain">
@@ -112,9 +120,9 @@
           } </code></pre>
         </div>
       </div>
-        <div id="divbottomright">
-          <h2 class="font" style="text-align:center">CSS</h2>
-          <p class="font">CSS is based off <strong>selectors and propertys</strong> to tell the computer where and how to dispay the html.</p>
+        <div id="divmiddleright">
+          <h2 class="font" style="text-align:center">CSS Selectors and Properties</h2>
+          <p class="font">CSS is based off <strong>selectors and properties</strong> to tell the computer where and how to dispay the html.</p>
           <div id="htmlexplain">
             <br/>
             <br/>
@@ -126,7 +134,7 @@
 
               {
                 /* property are below me */
-                /* propertys tell how the code is styled */
+                /* properties tell how the code is styled */
 
                 font-weight: bold;
                 color: #d4f4fa;
@@ -136,8 +144,8 @@
               <code><pre>
           </div>
         </div>
-        <div id="divbottomleft">
-          <h2 class="font" style="text-align:center">aaaaa</h2>
+        <div id="divmiddleleft">
+          <h2 class="font" style="text-align:center">HTML Opening tags and tags</h2>
           <p class="font">HTML is based off <strong>tags</strong> to tell the computer what to display.</p>
           <div id="htmlexplain">
             <br/>
@@ -147,9 +155,34 @@
             <p class="font"> &lt;!--- notice how we set the id to boldfont above---&gt;
           </div>
         </div>
+        <div id="divbottomright">
+          <h2 class="font" style="text-align:center">meow</h2>
+          <p class="font">aaa</p>
+          <div id="htmlexplain">
+            <br/>
+            <br/>
+            <pre><code class="font"></code></pre>
+            <pre><code class="font"><code><pre>
+            <p class="font"></p>
+          </div>
+        </div>
+        <div id="divbottomleft">
+          <h2 class="font" style="text-align:center">More HTML stuff</h2>
+          <p class="font">hihiihi</p>
+          <div id="htmlexplain">
+            <br/>
+            <br/>
+            <pre><code class="font"></code></pre>
+            <pre><code class="font"><code><pre>
+            <p class="font"></p>
+          </div>
+        </div>
       <!-- Test Subject -->
       <div id="animation"><p class="font" id="div109text">Test Subject Div109</p><div>
       <!-- Text Subject -->
     </div>
   </body>
+  <script src="clock.js" type="text/javascript">
+    function startTime();
+  </script>
 </html>
