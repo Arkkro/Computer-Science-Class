@@ -8,7 +8,7 @@ body{
 }
 .font {
   color:#d4f4fa;
-  font-family: haxrcorp,monospace;
+  font-family: monospace;
 }
 /* Navigation Bar Start */
 #navbar {
@@ -99,7 +99,7 @@ body{
   font-size: 24px;
   font-weight: bold;
   color:#d4f4fa;
-  font-family: haxrcorp, monospace;
+  font-family: monospace;
 }
 .title {
   font-size: 14px;
@@ -108,7 +108,7 @@ body{
 }
 table {
   color:#d4f4fa;
-  font-family: haxrcorp, monospace;
+  font-family: monospace;
 }
 a{
   text-decoration: none;
@@ -134,11 +134,11 @@ li{
 #code {
   color:#d4f4fa;
   font-size: 12px;
-  font-family: haxrcorp, monospace;
+  font-family: monospace;
 }
 #blogh1{
   color:#d4f4fa;
-  font-family: haxrcorp ,monospace;
+  font-family: monospace;
   text-align: center;
 }
 #htmlexplain{
