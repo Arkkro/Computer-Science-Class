@@ -256,7 +256,7 @@ transition-duration: 2s;
 /* Hardware page CSS */
 #hardwarebox {
   width: 630px;
-  height: 535px;
+  height: 735px;
   margin-left: 260px;
   margin-top: 40px;
   background-color: #171717;
@@ -269,7 +269,7 @@ transition-duration: 2s;
   width: 405px;
   height: 560px;
   margin-left: 920px;
-  margin-top: -552px;
+  margin-top: -702px;
   background-color: #171717;
   border: 1px solid #d4f4fa;
   position: absolute;
@@ -278,7 +278,7 @@ transition-duration: 2s;
   width: 405px;
   height: 550px;
   margin-left: 920px;
-  margin-top: -552px;
+  margin-top: -702px;
   background-color: #171717;
   border: 1px solid #d4f4fa;
   position: absolute;
@@ -287,7 +287,7 @@ transition-duration: 2s;
   width: 495px;
   height: 350px;
   margin-left: 920px;
-  margin-top: -552px;
+  margin-top: -702px;
   background-color: #171717;
   border: 1px solid #d4f4fa;
   position: absolute;
@@ -296,7 +296,7 @@ transition-duration: 2s;
   width: 495px;
   height: 315px;
   margin-left: 920px;
-  margin-top: -552px;
+  margin-top: -702px;
   background-color: #171717;
   border: 1px solid #d4f4fa;
   position: absolute;
@@ -305,7 +305,7 @@ transition-duration: 2s;
   width: 570px;
   height: 315px;
   margin-left: 920px;
-  margin-top: -552px;
+  margin-top: -702px;
   background-color: #171717;
   border: 1px solid #d4f4fa;
   position: absolute;
@@ -314,7 +314,7 @@ transition-duration: 2s;
   width: 405px;
   height: 470px;
   margin-left: 920px;
-  margin-top: -552px;
+  margin-top: -702px;
   background-color: #171717;
   border: 1px solid #d4f4fa;
   position: absolute;
@@ -323,7 +323,7 @@ transition-duration: 2s;
   width: 305px;
   height: 470px;
   margin-left: 920px;
-  margin-top: -552px;
+  margin-top: -702px;
   background-color: #171717;
   border: 1px solid #d4f4fa;
   position: absolute;
@@ -364,4 +364,77 @@ transition-duration: 2s;
 }
 #smalltitle {
   padding-left:48px;
+}
+/* Calc stuff */
+#calcbox {
+  width: 875px;
+  height:50px;
+  margin: auto;
+  margin-top: 80px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  padding-bottom: 60px;
+}
+
+#input1 {
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  color: #d4f4fa;
+  margin-left: 70px;
+  margin-top: -60px;
+  position: relative;
+  font-family: monospace;
+}
+
+#input2 {
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  color: #d4f4fa;
+  margin-top: -60px;
+  position: relative;
+  font-family: monospace;
+}
+#selectop {
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  color: #d4f4fa;
+  margin-top: -60px;
+  position: relative;
+  font-family: monospace;
+}
+
+#computebutton {
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  color: #d4f4fa;
+  margin-top: -60px;
+  position: relative;
+  font-family: monospace;
+}
+
+#resultBox {
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  color: #d4f4fa;
+  margin-left: 648px;
+  margin-right: 148px;
+  margin-top: 29px;
+  font-family: monospace;
+
+}
+#resultText {
+  color:#d4f4fa;
+  font-size: 40px;
+  font-family: monospace;
+}
+#clearButton{
+  margin-top: -50px;
+  margin-left: 340px;
+  position:absolute;
+}
+#clearText {
+  position:absolute;
+  color:#d4f4fa;
+  font-family: monospace;
+  font-size: 64px;
 }

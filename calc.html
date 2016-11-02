@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheetnew.css" type="text/css"/>
+  </head>
+  <body onload="init()">
+    <!-- Music -->
+    <div style="position: fixed; z-index: -99; width: 0%; height: 0%; display: none;" >
+      <iframe frameborder="0" height="100%" width="100%" src="https://www.youtube.com/embed/FA69oJLOBsM?autoplay=1&controls=0&showinfo=0&autohide=1">
+      </iframe>
+    </div>
+    <!-- Nav Bar -->
+    <div id="navbar">
+      <div>
+        <a href="homepagenew.html" class="font"><strong>Home</strong></a>
+      </div>
+      <div>
+        <a href="aboutme.html" class="font">About Me</a>
+      </div>
+      <div>
+        <a href="hardware.html" class="font">Hardware</a>
+      </div>
+      <div>
+        <a href="blog.html" class="font">HTML Blog</a>
+      </div>
+      <div>
+        <a href="calc.html" class="font">Calculator</a>
+      </div>
+    </div>
+    <!-- Nav Bar End -->
+    <!--Clock-->
+    <div id="clockbox">
+      <p class="font" id="clocktext">TODAY 00/00/2000 00:00:00</p>
+    </div>
+    <!--Clock End -->
+    <!--Site Mascot-->
+    <div id="mascot">
+    <img id="mascotimgrem" src="https://puu.sh/qVuZt/7d43db0a82.png"/>
+    </div>
+    <!--Site Mascot End-->
+    <br/>
+    <div id="calcbox">
+      <div id="resultBox">
+        <h1>0</h1>
+      </div>
+      <input id=input1></input>
+      <select id="selectop">
+        <option value="+">Addition</option>
+        <option value="-">Subtract</option>
+        <option value="x">Multiply</option>
+        <option value="/">Divide</option>
+     </select>
+     <input id=input2></input>
+     <button onclick='compute()' id=computebutton>Compute</button>
+    </div>
+  </body>
+  <script src="calc.js" type="text/javascript">
+  </script>
+</html>
