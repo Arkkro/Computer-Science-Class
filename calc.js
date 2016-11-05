@@ -1,10 +1,9 @@
-init();
 
 function init(){
   console.log("Init");
   startTime();
 }
-
+init();
 function startTime() {
     var today = new Date();
     var date = today.getDate();
@@ -46,23 +45,52 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
+
 function test(){
-  console.log("Test Success");
+  alert("Test Success");
 }
 //
 // //
-//
-// var computeButton = document.getElementById('computeButton');
-// var inp1 = document.getElementById('input1');
-// var inp2 = document.getElementById('input2');
-// var result;
-// var resultText = document.getElementById('resultText');
-// var selectOp = document.getElementById('selectOp');
-// computeButton.addEventListener("click", test);
-//
-//
-// function compute(){
-//   if (selectOp.value = "+") {
-//   var result = inp1 + inp2 = result;
-// }
-// }
+
+var computeButton = document.getElementById('computeButton');
+var input1 = document.getElementById('input1');
+var input2 = document.getElementById('input2');
+var result;
+
+computeButton.addEventListener("click", compute);
+
+
+function compute(){
+  var selectOp = document.getElementById('selectOp');
+  var int1 = parseInt(input1.value);
+  var int2 = parseInt(input2.value);
+
+  if (selectOp.value === "+") {
+    var result = int1 + int2;
+    alert ("Your answer is "  + result)
+  }
+  else if (selectOp.value === "-") {
+    var result = int1 - int2;
+    alert ("Your answer is "  + result)
+  }
+
+  else if(selectOp.value === "x"){
+    var result = int1 * int2;
+    alert ("Your answer is "  + result)
+  }
+  else if(selectOp.value === "/"){
+    var result = int1 / int2;
+    alert ("Your answer is "  + result)
+  }
+  else if(selectOp.value === "^"){
+    var result = Math.pow(int1, int2);
+    alert ("Your answer is "  + result)
+  }
+  else if(selectOp.value === "%"){
+    var result = int1 % int2;
+    alert ("Your answer is "  + result)
+  }
+  else {
+    alert ("Injecting Javascript I see")
+  }
+  }
