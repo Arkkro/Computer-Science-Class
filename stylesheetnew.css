@@ -1,0 +1,453 @@
+/* Main */
+body{
+  background-color:#282828;
+}
+@font-face {
+    font-family:'haxrcorpttf';
+    src: url('haxrcorpttf.ttf');
+}
+.font {
+  color:#d4f4fa;
+  font-family: monospace;
+}
+/* Navigation Bar Start */
+#navbar {
+  height: 119px;
+  width: 100px;
+  border: 1px solid #d4f4fa;
+  background-color:#171717;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+}
+/* Navigation Bar End */
+/* Mascot Start */
+#mascot {
+  height: 400px;
+  width: 200px;
+  border: 1px solid #d4f4fa;
+  background-color:#171717;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  margin-top:200px;
+}
+#mascotimgrem{
+  width:430px;
+  margin-left:-116px;
+  margin-top: -92px;
+}
+#mascotimgram{
+  width:330px;
+  margin-left:-60px;
+  margin-top: -64px;
+}
+/* Mascot End */
+/* Clock Start */
+#clockbox {
+  height: 6px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #d4f4fa;
+  background-color:#171717;
+  display: inline-block;
+  text-align: center;
+  position: fixed;
+  margin-top:170px
+}
+#searchbox {
+  height: 6px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #d4f4fa;
+  background-color:#171717;
+  display: inline-block;
+  text-align: center;
+  position:fixed;
+  margin-top:-380px
+}
+#clocktext {
+  margin-top: -2.5px;
+  font-size: 11px;
+}
+/* Clock End */
+#contentbox {
+  width: 600px;
+  height:450px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+}
+#ulleft {
+  width:300px;
+  height:75px;
+}
+#textpaddingtop {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+#textpadding {
+  padding-left: 15px;
+  padding-right: 5px;
+}
+#header {
+  font-size: 24px;
+  font-weight: bold;
+  color:#d4f4fa;
+  font-family: monospace;
+}
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  padding-left:18px;
+}
+table {
+  color:#d4f4fa;
+  font-family: monospace;
+}
+a{
+  text-decoration: none;
+  color:#d4f4fa;
+}
+
+li{
+  list-style: none;
+}
+/* Main End*/
+/* Animation Test And Blog */
+#contentboxblog {
+  width: 900px;
+  height:1450px;
+  margin: auto;
+  margin-top: 40px;
+  margin-right: 190px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#code {
+  color:#d4f4fa;
+  font-size: 12px;
+  font-family: monospace;
+}
+#blogh1{
+  color:#d4f4fa;
+  font-family: monospace;
+  text-align: center;
+}
+#htmlexplain{
+  width: 380px;
+  height:180px;
+  margin-left:5px;
+  margin-right:5px;
+  background-color:#282828;
+  margin-left: 13px;
+  overflow-y:scroll;
+}
+#cssexplain {
+    width: 380px;
+    height:160px;
+    margin-top: -8px;
+    margin-left:5px;
+    margin-right:5px;
+    background-color:#282828;
+    margin-left: 13px;
+    overflow-y:scroll;
+  }
+  #divmiddleright{
+    width:405px;
+    height: 300px;
+    background-color: #171717;
+    border: 1px solid #d4f4fa;
+    margin-left: 470px;
+    padding-left: 5px;
+    margin-top: 10px;
+    padding-right: 5px;
+  }
+  #divmiddleleft{
+    width:405px;
+    height: 300px;
+    background-color: #171717;
+    border: 1px solid #d4f4fa;
+    margin-left: 15px;
+    margin-top: -302px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #divbottomleft{
+    width:405px;
+    height: 300px;
+    background-color: #171717;
+    border: 1px solid #d4f4fa;
+    margin-left: 15px;
+    padding-left: 5px;
+    margin-top: -302px;
+    padding-right: 5px;
+  }
+  #divbottomright{
+    width:405px;
+    height: 300px;
+    background-color: #171717;
+    border: 1px solid #d4f4fa;
+    margin-left: 470px;
+    padding-left: 5px;
+    margin-top: 10px;
+    padding-right: 5px;
+  }
+#divleft{
+  width:405px;
+  height: 300px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  margin-left: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#divright{
+  width:405px;
+  height: 300px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  margin-left: 470px;
+  margin-top: -302px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#animation {
+width: 100px;
+height: 100px;
+background-color: #171717;
+border: 1px solid #d4f4fa;
+position: relative;
+margin-left: 940px;
+margin-top: -200px;
+animation: testmove 5s infinite;
+transition-duration: 2s;
+}
+@keyframes testmove {
+    0%   {top: 0px;}
+   25%  {top: 200px;}
+   50%  {top: 100px;}
+   75%  {top: 200px;}
+   100% {top: 0px;}
+}
+@-webkit-keyframes testmove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    50%  {top: 100px}
+    75% {top: 200px;}
+    100% {top:0px;}
+}
+#div109text {
+  text-align: center;
+  padding-top:24px;
+}
+#div109text:hover{
+  color:transparent;
+}
+
+/*Animation Test*/
+/* Hardware page CSS */
+#hardwarebox {
+  width: 630px;
+  height: 735px;
+  margin-left: 260px;
+  margin-top: 40px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  display:inline-block;
+  padding-top: 20px;
+  padding-bottom: -20;
+}
+#imageviewercomp{
+  width: 405px;
+  height: 560px;
+  margin-left: 920px;
+  margin-top: -702px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  position: absolute;
+}
+#imageviewermobo{
+  width: 405px;
+  height: 550px;
+  margin-left: 920px;
+  margin-top: -702px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  position: absolute;
+}
+#imageviewerram{
+  width: 495px;
+  height: 350px;
+  margin-left: 920px;
+  margin-top: -702px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  position: absolute;
+}
+#imageviewergpu{
+  width: 495px;
+  height: 315px;
+  margin-left: 920px;
+  margin-top: -702px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  position: absolute;
+}
+#imageviewerper{
+  width: 570px;
+  height: 315px;
+  margin-left: 920px;
+  margin-top: -702px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  position: absolute;
+}
+#imageviewercpu{
+  width: 405px;
+  height: 470px;
+  margin-left: 920px;
+  margin-top: -702px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  position: absolute;
+}
+#imageviewerhdd{
+  width: 305px;
+  height: 470px;
+  margin-left: 920px;
+  margin-top: -702px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  position: absolute;
+}
+#divider {
+  padding-right:25px;
+}
+#imageformatcomp {
+    padding-top: 80px;
+    width:490px;
+    transform: rotate(90deg);
+}
+#imageformatmotherboard {
+    width:440px;
+    margin-left:-30px;
+}
+#imageformatcpu {
+    width:740px;
+    margin-left:-163px;
+}
+#imageformathdd {
+    width:430px;
+    margin-left:-163px;
+    padding-left: 100px;
+    margin-top: -50px;
+}
+#imageformatram {
+    padding-top: 0px;
+    width:470px;
+}
+#imageformatgpu {
+    padding-top: 0px;
+    width:470px;
+}
+#imageformatper {
+    margin-top: -60px;
+    width:570px;
+}
+#smalltitle {
+  padding-left:48px;
+}
+/* Calc stuff */
+#calcbox {
+  width: 625px;
+  height:50px;
+  margin: auto;
+
+  margin-top: 80px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  padding-bottom: 60px;
+}
+
+#input1 {
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  color: #d4f4fa;
+  margin-left: 70px;
+  margin-top: 45px;
+  position: relative;
+  font-family: monospace;
+}
+
+#input2 {
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  color: #d4f4fa;
+  margin-top: -60px;
+  position: relative;
+  font-family: monospace;
+}
+#selectop {
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  color: #d4f4fa;
+  margin-top: -60px;
+  position: relative;
+  font-family: monospace;
+}
+
+#computebutton {
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  color: #d4f4fa;
+  margin-top: -60px;
+  position: relative;
+  font-family: monospace;
+}
+
+#resultBox {
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  color: #d4f4fa;
+  margin-left: 648px;
+  margin-right: 148px;
+  margin-top: 29px;
+  font-family: monospace;
+
+}
+#resultText {
+  color:#d4f4fa;
+  font-size: 40px;
+  font-family: monospace;
+}
+#clearButton{
+  margin-top: -50px;
+  margin-left: 340px;
+  position:absolute;
+}
+#clearText {
+  position:absolute;
+  color:#d4f4fa;
+  font-family: monospace;
+  font-size: 64px;
+}
+
+/* List */
+
+#listbox {
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+  color: #d4f4fa;
+  height: 400px;
+  width: 400px;
+  padding-left: 28px;
+  padding-top: 30px;
+}
