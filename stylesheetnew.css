@@ -448,6 +448,7 @@ transition-duration: 2s;
   color: #d4f4fa;
   height: 400px;
   width: 400px;
+  margin-left: auto;
   padding-left: 28px;
   padding-top: 30px;
 }
