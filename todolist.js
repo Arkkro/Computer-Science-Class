@@ -54,12 +54,12 @@ var addButton = document.getElementById("addButton");
 var select = document.getElementById("select");
 
 addButton.addEventListener("click", function(){
-var task = "<div>" + input.value + "</div>" + "<br id="taskBr"/>";
-    taskItem.innerHTML = taskItem.innerHTML + task;
-    console.log("");
+var task = "<div>" + input.value + "</div>" + "<br id='taskBr'/>"
+    taskItem.innerHTML = taskItem.innerHTML + task
+    console.log("test")
 });
-//
-// taskItem.addEventListener("click", function(evt){
-//   var removeItem = evt.target;
-//   removeItem.parentNode.removeChild(removeItem);
-// });
+
+taskItem.addEventListener("click", function(evt){
+  var removeItem = evt.target;
+  removeItem.parentNode.removeChild(removeItem);
+});
