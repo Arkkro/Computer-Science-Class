@@ -452,3 +452,8 @@ transition-duration: 2s;
   padding-left: 28px;
   padding-top: 30px;
 }
+
+#discord {
+  margin-left: 230px;
+  position: fixed;
+}

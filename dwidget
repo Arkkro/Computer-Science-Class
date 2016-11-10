@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="dwid.css">
+  <title>Discord Widget</title>
+</head>
+<body>
+  <div id="discord-widget"></div>
+  <script src="dwid.js"></script>
+</body>
+</html>
