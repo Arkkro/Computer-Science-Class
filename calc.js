@@ -45,18 +45,24 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
-
-function test(){
-  alert("Test Success");
-}
+// // //
+// function test(){
+//   alert("Test Success");
+// }
 //
-// //
+// // //
 
+// // //
+// Gets elements by id so they can be refrenced by javascript
 var computeButton = document.getElementById('computeButton');
 var input1 = document.getElementById('input1');
 var input2 = document.getElementById('input2');
 var result;
+// varible result is created to store the answer
+// // //
 
+// // //
+// creates 
 computeButton.addEventListener("click", compute);
 
 

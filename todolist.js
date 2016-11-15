@@ -51,15 +51,60 @@ function checkTime(i) {
 var input = document.getElementById("input");
 var taskItem = document.getElementById("taskItem");
 var addButton = document.getElementById("addButton");
-var select = document.getElementById("select");
+var option = document.getElementById("option");
 
 addButton.addEventListener("click", function(){
-var task = "<div>" + input.value + "</div>" + "<br id='taskBr'/>"
+  if (option.value === "bold") {
+    var task = "<strong><div>" + input.value + "</div><strong>" + "<br id='taskBr'/>"
     taskItem.innerHTML = taskItem.innerHTML + task
     console.log("test")
+
+  }
+  else if (option.value === "big"){
+    var task = "<div style=\"font-size:40px;\">" + input.value + "</div>" + "<br id='taskBr'/>"
+    taskItem.innerHTML = taskItem.innerHTML + task
+  }
+  else if (option.value === "underline") {
+    var task = "<div style=\"text-decoration:underline;\">" + input.value + "</div>" + "<br id='taskBr'/>"
+    taskItem.innerHTML = taskItem.innerHTML + task
+  }
+  else if (option.value === "small"){
+    var task = "<div style=\"font-size:10px;\">" + input.value + "</div>" + "<br id='taskBr'/>"
+    taskItem.innerHTML = taskItem.innerHTML + task
+  }
+  else if (option.value === "weird") {
+    var task = "<div style=\"font-family:wingdings;\">" + input.value + "</div>" + "<br id='taskBr'/>"
+    taskItem.innerHTML = taskItem.innerHTML + task
+
+  }
+  else {
+    var task = "<div>" + input.value + "</div>" + "<br id='taskBr'/>"
+    taskItem.innerHTML = taskItem.innerHTML + task
+    console.log("test")
+}
 });
 
 taskItem.addEventListener("click", function(evt){
+    var removeItem = evt.target;
+    var noDelete = document.getElementById("taskItem");
+
+if (removeItem !== noDelete  && removeItem.value !== "clicked"){
+
   var removeItem = evt.target;
+  removeItem.style.color = "#657577";
+  removeItem.style.textDecoration = "line-through"
+  removeItem.value = "clicked";
+  console.log(removeItem.value);
+
+}
+else if (removeItem.value === "clicked") {
   removeItem.parentNode.removeChild(removeItem);
+}
+else {
+
+}
 });
+
+// taskBr.addEventListener("click", function(){
+//
+// });

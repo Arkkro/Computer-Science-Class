@@ -51,14 +51,21 @@ Link the html to the CSS (in the <head>)
 Add the Script to the HTML (at the bottom, right before the <body>)
 -->
     <div id="listbox">
-      <select>
-        <option value="bold"></option>
+      <select id="option">
+        <option value="">Normal</option>
+        <option value="bold">Bold</option>
+        <option value="big">Big</option>
+        <option value="underline">Underline</option>
+        <option value="small">Small</option>
+        <option value="weird">???</option>
       </select>
       <input id="input"></input>
       <button id="addButton">Add</button>
-      <div id="taskItem">
+      <div>
+        <div id="taskItem">
+        </div>
       </div>
-      <img src="https://pbs.twimg.com/media/CwK1iKlUEAgZLi0.jpg"/>
+      <!-- <img src="https://pbs.twimg.com/media/CwK1iKlUEAgZLi0.jpg"/> -->
     </div>
   </body>
   <script src="todolist.js" type="text/javascript">
