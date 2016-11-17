@@ -1,14 +1,14 @@
-
-function init(){
-  console.log("Init");
-  startTime();
+function init() {
+    console.log("Init");
+    startTime();
 }
 init();
+
 function startTime() {
     var today = new Date();
     var date = today.getDate();
     var month = today.getMonth() + 1;
-    var year = today.getYear() +1900;
+    var year = today.getYear() + 1900;
     switch (today.getDay()) {
         case 0:
             weekday = "SUNDAY";
@@ -28,7 +28,7 @@ function startTime() {
         case 5:
             weekday = "FRIDAY";
             break;
-        case  6:
+        case 6:
             weekday = "SATURDAY";
     }
 
@@ -38,11 +38,14 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('clocktext').innerHTML =
-    weekday + " " + month + "/" + date + "/" + year + " " + " " + h + ":" + m + ":" + s;
+        weekday + " " + month + "/" + date + "/" + year + " " + " " + h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
 }
+
 function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    if (i < 10) {
+        i = "0" + i
+    }; // add zero in front of numbers < 10
     return i;
 }
 
@@ -65,37 +68,52 @@ computeButton.addEventListener("click", compute);
 
 // // //
 // compute function that gives the answer of selected operator on the given numbers
-function compute(){
-  var selectOp = document.getElementById('selectOp'); // gets element of the operator selecter
-  var int1 = parseInt(input1.value); // creates a varible that = a string of the first input box and converts it into a number that javascript can do math to it
-  var int2 = parseInt(input2.value); // creates a varible that = a string of the second input box and converts it into a number that javascript can do math to it
+function compute() {
+    var selectOp = document.getElementById('selectOp'); // gets element of the operator selecter
+    var int1 = parseInt(input1.value); // creates a varible that = a string of the first input box and converts it into a number that javascript can do math to it
+    var int2 = parseInt(input2.value); // creates a varible that = a string of the second input box and converts it into a number that javascript can do math to it
 
-  if (selectOp.value === "+") { // checks if the plus operation is selected and executes if it is
-    var result = int1 + int2; // i
-    alert ("Your answer is "  + result)
-  }
-  else if (selectOp.value === "-") {
-    var result = int1 - int2;
-    alert ("Your answer is "  + result)
-  }
-
-  else if(selectOp.value === "x"){
-    var result = int1 * int2;
-    alert ("Your answer is "  + result)
-  }
-  else if(selectOp.value === "/"){
-    var result = int1 / int2;
-    alert ("Your answer is "  + result)
-  }
-  else if(selectOp.value === "^"){
-    var result = Math.pow(int1, int2);
-    alert ("Your answer is "  + result)
-  }
-  else if(selectOp.value === "%"){
-    var result = int1 % int2;
-    alert ("Your answer is "  + result)
-  }
-  else {
-
-  }
-  }
+    if (selectOp.value === "+") { // checks if the plus operation is selected and executes belov if it is
+        var result = int1 + int2; // adds both converted inputs
+        if (isNaN(result) === false) { //checks if the the calculated answer is a number
+            alert("Your answer is " + result) // if result is a number then the answer will be displayed
+        } else {
+            alert("T-that isn't a number.. baka >////<")// if result isn't a number then message will be displayed
+        }
+    } else if (selectOp.value === "-") { //same thing but for minus
+        var result = int1 - int2;
+        if (isNaN(result) === false) {
+            alert("Your answer is " + result)
+        } else {
+            alert("T-that isn't a number.. baka >////<")
+        }
+    } else if (selectOp.value === "x") { // so on
+        var result = int1 * int2;
+        if (isNaN(result) === false) {
+            alert("Your answer is " + result)
+        } else {
+            alert("T-that isn't a number.. baka >////<")
+        }
+    } else if (selectOp.value === "/") { // ..
+        var result = int1 / int2;
+        if (isNaN(result) === false) {
+            alert("Your answer is " + result)
+        } else {
+            alert("T-that isn't a number.. baka >////<")
+        }
+    } else if (selectOp.value === "^") { // .....
+        var result = Math.pow(int1, int2);
+        if (isNaN(result) === false) {
+            alert("Your answer is " + result)
+        } else {
+            alert("T-that isn't a number.. baka >////<")
+        }
+    } else if (selectOp.value === "%") { // ..............
+        var result = int1 % int2;
+        if (isNaN(result) === false) {
+            alert("Your answer is " + result)
+        } else {
+            alert("T-that isn't a number.. baka >////<")
+        }
+    }
+}
