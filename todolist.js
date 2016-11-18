@@ -80,20 +80,18 @@ addButton.addEventListener("click", function() { // add a listener that waits fo
     }
 });
 
-taskItem.addEventListener("click", function(evt) {
-    var removeItem = evt.target;
-    var noDelete = document.getElementById("taskItem");
+taskItem.addEventListener("click", function(evt) { // adds event listener to task items
+    var removeItem = evt.target; // selects the clicked item to a varible
+    var noDelete = document.getElementById("taskItem"); // sets what not to delete
 
-    if (removeItem !== noDelete && removeItem.value !== "clicked") {
-
+    if (removeItem !== noDelete && removeItem.value !== "clicked") { // checks the value to see if it has been clicked before and if the evt target isn't noDelete
         var removeItem = evt.target;
-        removeItem.style.color = "#657577";
-        removeItem.style.textDecoration = "line-through"
-        removeItem.value = "clicked";
-        console.log(removeItem.value);
+        removeItem.style.color = "#657577"; // change the color darker
+        removeItem.style.textDecoration = "line-through" // puts strikethrogh the line
+        removeItem.value = "clicked"; // sets the value to be clicked
 
-    } else if (removeItem.value === "clicked") {
-        removeItem.parentNode.removeChild(removeItem);
+    } else if (removeItem.value === "clicked") { // checks if the value is clicked
+        removeItem.parentNode.removeChild(removeItem); // deletes the clicked task
     } else {
 
     }
