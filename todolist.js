@@ -57,26 +57,24 @@ var addButton = document.getElementById("addButton"); //connects the button to t
 var option = document.getElementById("option"); //connects the drag down to the js
 
 addButton.addEventListener("click", function() { // add a listener that waits for a click to the connecned button. function below will look for what formatting was closen and will add it to the html
-    if (option.value === "bold") { // checks for bold
-        var task = "<strong><div>" + input.value + "<br></div><strong>" // what it adds
-        taskItem.innerHTML = taskItem.innerHTML + task // replaces what is before with its self plus line above
-    } else if (option.value === "big") { //checks for big
-        var task = "<div style=\"font-size:40px;\">" + input.value + "<br></div>"
-        taskItem.innerHTML = taskItem.innerHTML + task
-    } else if (option.value === "underline") {
-        var task = "<div style=\"text-decoration:underline;\">" + input.value + "<br></div>"
-        taskItem.innerHTML = taskItem.innerHTML + task
-    } else if (option.value === "small") {
-        var task = "<div style=\"font-size:10px;\">" + input.value + "<br></div>"
-        taskItem.innerHTML = taskItem.innerHTML + task
-    } else if (option.value === "weird") {
-        var task = "<div style=\"font-family:wingdings;\">" + input.value + "<br></div>"
-        taskItem.innerHTML = taskItem.innerHTML + task
-
-    } else {
-        var task = "<div>" + input.value + "<br></div>"
-        taskItem.innerHTML = taskItem.innerHTML + task
-        console.log("test")
+    if (option.value === "bold") { // checks if bold is selected in dropdown
+        var task = "<strong><div>" + input.value + "<br></div><strong>" // userinput with bold formatting is set to the var task
+        taskItem.innerHTML = taskItem.innerHTML + task // takes what is currently in the list and adds var  defined above task
+    } else if (option.value === "big") { //checks if big is selected in dropdown
+        var task = "<div style=\"font-size:40px;\">" + input.value + "<br></div>" // userinput with big formatting is set to the var task
+        taskItem.innerHTML = taskItem.innerHTML + task // takes what is currently in the list and adds var defined above task
+    } else if (option.value === "underline") {  //checks if underline is selected in dropdown
+        var task = "<div style=\"text-decoration:underline;\">" + input.value + "<br></div>" // userinput with underline formatting is set to the var task
+        taskItem.innerHTML = taskItem.innerHTML + task // takes what is currently in the list and adds var defined above task
+    } else if (option.value === "small") { //checks if small is selected in dropdown
+        var task = "<div style=\"font-size:10px;\">" + input.value + "<br></div>" // userinput with small formatting is set to the var task
+        taskItem.innerHTML = taskItem.innerHTML + task // takes what is currently in the list and adds var defined above task
+    } else if (option.value === "weird") { //checks if weird is selected in dropdown
+        var task = "<div style=\"font-family:wingdings;\">" + input.value + "<br></div>" // userinput with weird formatting is set to the var task
+        taskItem.innerHTML = taskItem.innerHTML + task // takes what is currently in the list and adds var defined above task
+    } else { // if no perfrence is selected the script will defalut to normal formatting
+        var task = "<div>" + input.value + "<br></div>" // userinput with normal formatting is set to the var task
+        taskItem.innerHTML = taskItem.innerHTML + task // takes what is currently in the list and adds var defined above task
     }
 });
 
@@ -84,15 +82,13 @@ taskItem.addEventListener("click", function(evt) { // adds event listener to tas
     var removeItem = evt.target; // selects the clicked item to a varible
     var noDelete = document.getElementById("taskItem"); // sets what not to delete
 
-    if (removeItem !== noDelete && removeItem.value !== "clicked") { // checks the value to see if it has been clicked before and if the evt target isn't noDelete
+    if (removeItem !== noDelete && removeItem.value !== "clicked") { // checks the value to see if it has been clicked before and if the evt target isn't noDelete item
         var removeItem = evt.target;
         removeItem.style.color = "#657577"; // change the color darker
         removeItem.style.textDecoration = "line-through" // puts strikethrogh the line
         removeItem.value = "clicked"; // sets the value to be clicked
 
-    } else if (removeItem.value === "clicked") { // checks if the value is clicked
-        removeItem.parentNode.removeChild(removeItem); // deletes the clicked task
-    } else {
-
+    } else if (removeItem.value === "clicked") { // checks if the value of the item has been clicked
+        removeItem.parentNode.removeChild(removeItem); // deletes the task item
     }
 });
