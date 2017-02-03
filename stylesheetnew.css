@@ -9,6 +9,7 @@ body{
 .font {
   color:#d4f4fa;
   font-family: monospace;
+  font-weight: normal;
 }
 /* Navigation Bar Start */
 #navbar {
@@ -34,6 +35,17 @@ body{
   position: fixed;
   margin-top:200px;
 }
+#mascottohru {
+  height: 254px;
+  width: 220px;
+  border: 1px solid #d4f4fa;
+  background-color:#171717;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  margin-top:200px;
+}
 #mascotimgrem{
   width:430px;
   margin-left:-116px;
@@ -43,6 +55,11 @@ body{
   width:330px;
   margin-left:-60px;
   margin-top: -64px;
+}
+#mascotimgtohru{
+  width:270px;
+  margin-left:-35px;
+  margin-top:10px;
 }
 /* Mascot End */
 /* Clock Start */
@@ -105,6 +122,18 @@ body{
   font-size: 14px;
   font-weight: bold;
   padding-left:18px;
+  color:#d4f4fa;
+  font-family: monospace;
+  font-weight: normal;
+}
+.titlev {
+  margin: auto;
+  font-size: 78px;
+  font-weight: bold;
+  padding-left:18px;
+  color:#d4f4fa;
+  font-family: monospace;
+  font-weight: normal;
 }
 table {
   color:#d4f4fa;
@@ -456,4 +485,18 @@ transition-duration: 2s;
 #discord {
   margin-left: 230px;
   position: fixed;
+}
+#contentBoxAi {
+  width: 1200px;
+  height:3450px;
+  margin-left: 270px;
+  padding-left: 10px;
+  margin-top: 40px;
+  background-color: #171717;
+  border: 1px solid #d4f4fa;
+}
+#mechanicsimg {
+  display: block;
+  margin: auto;
+  width: 500px;
 }
