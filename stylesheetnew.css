@@ -13,7 +13,7 @@ body{
 }
 /* Navigation Bar Start */
 #navbar {
-  height: 119px;
+  height: 135px;
   width: 100px;
   border: 1px solid #d4f4fa;
   background-color:#171717;
@@ -487,8 +487,8 @@ transition-duration: 2s;
   position: fixed;
 }
 #contentBoxAi {
-  width: 1200px;
-  height:3450px;
+  width: 1700px;
+  height:3950px;
   margin-left: 270px;
   padding-left: 10px;
   margin-top: 40px;
