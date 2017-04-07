@@ -40,7 +40,7 @@
     <div id="mascot">
     <img id="mascotimgrem" src="https://puu.sh/qVuZt/7d43db0a82.png"/>
     </div>
-    <iframe src="https://discordapp.com/widget?id=217059434986340352&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" id="discord"></iframe>
+    <!-- <iframe src="https://discordapp.com/widget?id=217059434986340352&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" id="discord"></iframe> -->
     <!--Site Mascot End-->
     <br/>
 <!--
@@ -66,6 +66,52 @@ Add the Script to the HTML (at the bottom, right before the <body>)
         </div>
       </div>
       <!-- <img src="https://pbs.twimg.com/media/CwK1iKlUEAgZLi0.jpg"/> -->
+    </div>
+    <div id="todolistHowto">
+      <h1 style="color:#d4f4fa">Todo List How to</h1>
+      <!-- <p></p> -->
+      <pre id="todolistCode"><code>var input = document.getElementById(&quot;input&quot;); //connects the typed input to the javascript
+var taskItem = document.getElementById(&quot;taskItem&quot;); //connects the div where the the list item will go to the jawascript
+var addButton = document.getElementById(&quot;addButton&quot;); //connects the button to the js
+var option = document.getElementById(&quot;option&quot;); //connects the drag down to the js
+
+addButton.addEventListener(&quot;click&quot;, function() { // add a listener that waits for a click to the connecned button. function below will look for what formatting was closen and will add it to the html
+    if (option.value === &quot;bold&quot;) { // checks if bold is selected in dropdown
+        var task = &quot;&lt;strong&gt;&lt;div&gt;&quot; + input.value + &quot;&lt;br&gt;&lt;/div&gt;&lt;strong&gt;&quot; // userinput with bold formatting is set to the var task
+        taskItem.innerHTML = taskItem.innerHTML + task // takes what is currently in the list and adds var  defined above task
+    } else if (option.value === &quot;big&quot;) { //checks if big is selected in dropdown
+        var task = &quot;&lt;div style=\&quot;font-size:40px;\&quot;&gt;&quot; + input.value + &quot;&lt;br&gt;&lt;/div&gt;&quot; // userinput with big formatting is set to the var task
+        taskItem.innerHTML = taskItem.innerHTML + task // takes what is currently in the list and adds var defined above task
+    } else if (option.value === &quot;underline&quot;) {  //checks if underline is selected in dropdown
+        var task = &quot;&lt;div style=\&quot;text-decoration:underline;\&quot;&gt;&quot; + input.value + &quot;&lt;br&gt;&lt;/div&gt;&quot; // userinput with underline formatting is set to the var task
+        taskItem.innerHTML = taskItem.innerHTML + task // takes what is currently in the list and adds var defined above task
+    } else if (option.value === &quot;small&quot;) { //checks if small is selected in dropdown
+        var task = &quot;&lt;div style=\&quot;font-size:10px;\&quot;&gt;&quot; + input.value + &quot;&lt;br&gt;&lt;/div&gt;&quot; // userinput with small formatting is set to the var task
+        taskItem.innerHTML = taskItem.innerHTML + task // takes what is currently in the list and adds var defined above task
+    } else if (option.value === &quot;weird&quot;) { //checks if weird is selected in dropdown
+        var task = &quot;&lt;div style=\&quot;font-family:wingdings;\&quot;&gt;&quot; + input.value + &quot;&lt;br&gt;&lt;/div&gt;&quot; // userinput with weird formatting is set to the var task
+        taskItem.innerHTML = taskItem.innerHTML + task // takes what is currently in the list and adds var defined above task
+    } else { // if no perfrence is selected the script will defalut to normal formatting
+        var task = &quot;&lt;div&gt;&quot; + input.value + &quot;&lt;br&gt;&lt;/div&gt;&quot; // userinput with normal formatting is set to the var task
+        taskItem.innerHTML = taskItem.innerHTML + task // takes what is currently in the list and adds var defined above task
+    }
+});
+
+taskItem.addEventListener(&quot;click&quot;, function(evt) { // adds event listener to task items
+    var removeItem = evt.target; // selects the clicked item to a varible
+    var noDelete = document.getElementById(&quot;taskItem&quot;); // sets what not to delete
+
+    if (removeItem !== noDelete &amp;&amp; removeItem.value !== &quot;clicked&quot;) { // checks the value to see if it has been clicked before and if the evt target isn't noDelete item
+        var removeItem = evt.target;
+        removeItem.style.color = &quot;#657577&quot;; // change the color darker
+        removeItem.style.textDecoration = &quot;line-through&quot; // puts strikethrogh the line
+        removeItem.value = &quot;clicked&quot;; // sets the value to be clicked
+
+    } else if (removeItem.value === &quot;clicked&quot;) { // checks if the value of the item has been clicked
+        removeItem.parentNode.removeChild(removeItem); // deletes the task item
+    }
+});
+</code></pre>
     </div>
   </body>
   <script src="todolist.js" type="text/javascript">
